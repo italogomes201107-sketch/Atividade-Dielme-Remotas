@@ -1,0 +1,15 @@
+5) Programa Node.js com Express para listar livros
+
+const express = require("express");
+const app = express();
+
+const livros = [
+  { id: 1, nome: "Dom Casmurro", editora: "Globo", autor: "Machado de Assis", categoria: "Romance", dataPublicacao: "1899" },
+  { id: 2, nome: "1984", editora: "Companhia", autor: "George Orwell", categoria: "Ficção", dataPublicacao: "1949" }
+];
+
+app.get("/livros", (req, res) => {
+  res.json(livros);
+});
+
+app.listen(3000, () => console.log("API rodando na porta 3000"));
