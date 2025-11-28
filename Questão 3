@@ -1,0 +1,29 @@
+3) Resumo sobre os principais SGBDs NoSQL e como configurá-los no Windows
+
+Os principais bancos NoSQL são:
+
+MongoDB (Documento)
+
+Armazena dados em documentos JSON.
+
+Ótimo para aplicações web, flexível e escalável.
+
+No Windows: instalar via instalador .msi → configurar serviço → acessar via MongoDB Compass ou terminal.
+
+Redis (Chave-valor)
+
+Extremamente rápido, usado para cache e filas.
+
+No Windows: instalar Redis for Windows (WSL recomendado) e iniciar o servidor com redis-server.
+
+Cassandra (Colunar)
+
+Muito usado para dados distribuídos e escaláveis.
+
+No Windows: usar instalação via WSL ou Docker, já que não possui instalador nativo.
+
+Neo4j (Grafos)
+
+Especializado em relações entre entidades.
+
+No Windows: baixar o instalador oficial → iniciar Neo4j Desktop → criar database.
