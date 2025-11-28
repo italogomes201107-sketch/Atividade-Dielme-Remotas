@@ -1,0 +1,17 @@
+4) Programa em Python que busca Pokémon por API
+
+import requests
+
+nome = input("Digite o nome do Pokémon: ").lower()
+url = f"https://pokeapi.co/api/v2/pokemon/{nome}"
+
+res = requests.get(url)
+
+if res.status_code == 200:
+    dados = res.json()
+    print("Nome:", dados["name"])
+    print("Peso:", dados["weight"])
+    print("Altura:", dados["height"])
+    print("Tipo:", dados["types"][0]["type"]["name"])
+else:
+    print("Pokémon não encontrado.")
