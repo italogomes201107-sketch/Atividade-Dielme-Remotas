@@ -1,0 +1,44 @@
+2) Utilize o MongoDB para criar coleções e inserir 4 elementos para cada coleção
+Coleção: Clientes
+
+---
+[
+  { "nome": "Ana Silva", "idade": 28, "email": "ana@gmail.com" },
+  { "nome": "Carlos Souza", "idade": 35, "email": "carlos@hotmail.com" },
+  { "nome": "Fernanda Lima", "idade": 22, "email": "fernanda@yahoo.com" },
+  { "nome": "João Pedro", "idade": 40, "email": "joao@gmail.com" }
+]
+---
+
+Coleção Produtos
+
+---
+[
+  { "nome": "Mouse Gamer", "descricao": "Mouse RGB", "preco": 120 },
+  { "nome": "Teclado Mecânico", "descricao": "Switch Blue", "preco": 250 },
+  { "nome": "Headset", "descricao": "Som surround", "preco": 180 },
+  { "nome": "Monitor", "descricao": "144Hz FullHD", "preco": 900 }
+]
+---
+
+Coleção ItensVenda
+
+---
+[
+  { "produto": "Mouse Gamer", "vendaId": 1, "quantidade": 2 },
+  { "produto": "Monitor", "vendaId": 2, "quantidade": 1 },
+  { "produto": "Teclado Mecânico", "vendaId": 3, "quantidade": 1 },
+  { "produto": "Headset", "vendaId": 1, "quantidade": 1 }
+]
+---
+
+Coleção Vendas
+
+---
+[
+  { "clienteId": 1, "dataVenda": "2024-11-20", "total": 420 },
+  { "clienteId": 3, "dataVenda": "2024-11-22", "total": 900 },
+  { "clienteId": 2, "dataVenda": "2024-11-23", "total": 250 },
+  { "clienteId": 4, "dataVenda": "2024-11-24", "total": 180 }
+]
+---
